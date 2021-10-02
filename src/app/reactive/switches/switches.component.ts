@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import {tap} from 'rxjs/operators'
 import Swal from 'sweetalert2'
 
 @Component({
@@ -29,6 +30,7 @@ export class SwitchesComponent implements OnInit {
       ...this.persona,
       condiciones: true
     })
+
 
     // Esta estrategia tiene el siguiente flujo
     // A medida que se modifica el formulario se actualiza la persona
